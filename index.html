@@ -71,7 +71,6 @@
       <a class="btn" href="#demo">Solicitar una demo</a>
       <a class="btn ghost" href="#como">Ver cómo funciona</a>
     </div>
-    <p class="note">Funcionando cada día en un grupo de cuatro locales en Valencia · Integración por API con vuestro sistema de gestión</p>
 
     <figure class="shot">
       <img src="/shot-lista.png" width="1440" height="840"
@@ -293,7 +292,7 @@ Salmón fresco 0,4 kg</div>
       <h2>Vemos vuestros albaranes en una llamada de 20 minutos</h2>
       <p class="muted" style="max-width:40em;margin:0 auto 22px">Enviadnos dos o tres albaranes de
         vuestros proveedores habituales. En la demo los leemos en directo y decís si os sirve.</p>
-      <p><a class="btn" href="mailto:hola@ritmo-ops.com?subject=Demo%20Ritmo%20OPS">hola@ritmo-ops.com</a></p>
+      <p><a class="btn" href="#demo" data-copy="hola@ritmo-ops.com" data-done="¡Copiado!" title="Clic para copiar">hola@ritmo-ops.com</a></p>
       <p class="muted" style="font-size:14px;margin-top:14px">Valencia, España · respondemos el mismo día</p>
     </div>
   </div>
@@ -313,11 +312,33 @@ Salmón fresco 0,4 kg</div>
     </div>
     <div>
       <p><a href="/privacidad.html">Privacidad</a><br>
-        <a href="mailto:hola@ritmo-ops.com">hola@ritmo-ops.com</a><br>
+        <a href="#demo" data-copy="hola@ritmo-ops.com" data-done="¡Copiado!" title="Clic para copiar">hola@ritmo-ops.com</a><br>
         <a href="https://app.ritmo-ops.com">Entrar en la aplicación</a></p>
     </div>
   </div>
 </footer>
 
+<script>
+document.addEventListener("click", function (e) {
+  var el = e.target.closest("[data-copy]");
+  if (!el) return;
+  e.preventDefault();
+  if (el.dataset.busy) return;
+  var was = el.textContent, done = el.getAttribute("data-done") || "OK";
+  var show = function () {
+    el.dataset.busy = "1"; el.textContent = done;
+    setTimeout(function () { el.textContent = was; delete el.dataset.busy; }, 1600);
+  };
+  var txt = el.getAttribute("data-copy");
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(show, show);
+  else {
+    var i = document.createElement("textarea");
+    i.value = txt; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
+    document.body.appendChild(i); i.select();
+    try { document.execCommand("copy"); } catch (err) {}
+    i.remove(); show();
+  }
+});
+</script>
 </body>
 </html>

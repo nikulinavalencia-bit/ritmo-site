@@ -49,7 +49,6 @@
       <a class="btn" href="#demo">Book a demo</a>
       <a class="btn ghost" href="#how">See how it works</a>
     </div>
-    <p class="note">Running every day across a four-location group in Valencia, Spain · API integration with your management system</p>
 
     <figure class="shot">
       <img src="/shot-lista.png" width="1440" height="840" alt="List of delivery notes in Ritmo OPS with their status">
@@ -141,7 +140,7 @@ Salmon 0.4 kg</div>
       <h2>Bring two or three of your delivery notes</h2>
       <p class="muted" style="max-width:40em;margin:0 auto 22px">We read them live in a 20-minute call,
         and you decide whether it's worth it.</p>
-      <p><a class="btn" href="mailto:hola@ritmo-ops.com?subject=Ritmo%20OPS%20demo">hola@ritmo-ops.com</a></p>
+      <p><a class="btn" href="#demo" data-copy="hola@ritmo-ops.com" data-done="Copied!" title="Click to copy">hola@ritmo-ops.com</a></p>
       <p class="muted" style="font-size:14px;margin-top:14px">Valencia, Spain · same-day reply</p>
     </div>
   </div>
@@ -155,10 +154,32 @@ Salmon 0.4 kg</div>
     </div>
     <div><p><a href="/">Español</a><br><a href="/ru.html">Русский</a></p></div>
     <div><p><a href="/privacidad.html">Privacy</a><br>
-      <a href="mailto:hola@ritmo-ops.com">hola@ritmo-ops.com</a><br>
+      <a href="#demo" data-copy="hola@ritmo-ops.com" data-done="Copied!" title="Click to copy">hola@ritmo-ops.com</a><br>
       <a href="https://app.ritmo-ops.com">Sign in</a></p></div>
   </div>
 </footer>
 
+<script>
+document.addEventListener("click", function (e) {
+  var el = e.target.closest("[data-copy]");
+  if (!el) return;
+  e.preventDefault();
+  if (el.dataset.busy) return;
+  var was = el.textContent, done = el.getAttribute("data-done") || "OK";
+  var show = function () {
+    el.dataset.busy = "1"; el.textContent = done;
+    setTimeout(function () { el.textContent = was; delete el.dataset.busy; }, 1600);
+  };
+  var txt = el.getAttribute("data-copy");
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(show, show);
+  else {
+    var i = document.createElement("textarea");
+    i.value = txt; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
+    document.body.appendChild(i); i.select();
+    try { document.execCommand("copy"); } catch (err) {}
+    i.remove(); show();
+  }
+});
+</script>
 </body>
 </html>

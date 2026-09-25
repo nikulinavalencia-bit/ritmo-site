@@ -123,11 +123,33 @@
     </div>
     <div>
       <p><a href="/privacidad.html">Privacidad</a><br>
-        <a href="mailto:hola@ritmo-ops.com">hola@ritmo-ops.com</a><br>
+        <a href="/#demo" data-copy="hola@ritmo-ops.com" data-done="¡Copiado!" title="Clic para copiar">hola@ritmo-ops.com</a><br>
         <a href="https://app.ritmo-ops.com">Entrar en la aplicación</a></p>
     </div>
   </div>
 </footer>
 
+<script>
+document.addEventListener("click", function (e) {
+  var el = e.target.closest("[data-copy]");
+  if (!el) return;
+  e.preventDefault();
+  if (el.dataset.busy) return;
+  var was = el.textContent, done = el.getAttribute("data-done") || "OK";
+  var show = function () {
+    el.dataset.busy = "1"; el.textContent = done;
+    setTimeout(function () { el.textContent = was; delete el.dataset.busy; }, 1600);
+  };
+  var txt = el.getAttribute("data-copy");
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(show, show);
+  else {
+    var i = document.createElement("textarea");
+    i.value = txt; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
+    document.body.appendChild(i); i.select();
+    try { document.execCommand("copy"); } catch (err) {}
+    i.remove(); show();
+  }
+});
+</script>
 </body>
 </html>
