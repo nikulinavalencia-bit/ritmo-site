@@ -72,12 +72,16 @@
       <a class="btn ghost" href="#como">Ver cómo funciona</a>
     </div>
 
-    <figure class="shot">
-      <img src="/shot-lista.png" width="1440" height="840"
-           alt="Lista de albaranes en Ritmo OPS con su estado: requiere edición, listo, contabilizado">
-      <figcaption>Todos los albaranes del local en una lista: qué está listo, qué requiere una mirada y qué ya está contabilizado.</figcaption>
-    </figure>
+<div class="demo" style="margin-top:38px">
+  <h4>Todos los albaranes del local, en una lista</h4>
+  <div class="doclist">
+    <div class="drow"><span class="num">ALB-2026/1187</span><span class="sup">Distribuciones del Turia</span><span class="sum">81,82 &euro;</span><span class="pill ok">Contabilizado</span></div>
+    <div class="drow"><span class="num">FV-9921</span><span class="sup">Frutas y Verduras La Huerta</span><span class="sum">42,95 &euro;</span><span class="pill ok">Contabilizado</span></div>
+    <div class="drow"><span class="num">PP-2026/455</span><span class="sup">Pescados del Puerto</span><span class="sum">78,76 &euro;</span><span class="pill rdy">Listo para enviar</span></div>
+    <div class="drow"><span class="num">LM-7781</span><span class="sup">L&aacute;cteos Mediterr&aacute;neo</span><span class="sum">25,74 &euro;</span><span class="pill wait">Requiere una mirada</span></div>
   </div>
+  <p class="muted" style="margin:14px 0 0;font-size:14px">Solo lo amarillo pide atenci&oacute;n. El resto ya est&aacute; en vuestro sistema.</p>
+</div>  </div>
 </section>
 
 <section class="tint">
@@ -114,7 +118,7 @@
       <li><b>Se contabiliza</b>Dos clics: revisas y confirmas. O sale solo cuando todo cuadra.</li>
     </ol>
 
-    <div class="grid g2" style="margin-top:34px; align-items:center">
+    <div style="margin-top:34px; max-width:760px">
       <div class="chat">
         <p class="eyebrow" style="margin-bottom:10px">En el grupo del local</p>
         <div class="bubble">Merma
@@ -126,11 +130,6 @@ Salmón fresco 0,4 kg</div>
         <div class="docline"><span>Salmón fresco → Salmón fresco · 0,4 kg</span><b>Merma</b></div>
         <p class="muted" style="margin:10px 0 0; font-size:14px">Los mensajes del día se juntan en una sola acta y por la noche se contabiliza sola.</p>
       </div>
-      <figure class="shot" style="margin:0">
-        <img src="/shot-merma.png" width="1440" height="840"
-             alt="Acta de baja creada a partir de un mensaje del grupo de Telegram">
-        <figcaption>El mensaje original queda a la vista: siempre se sabe de dónde salió cada línea.</figcaption>
-      </figure>
     </div>
   </div>
 </section>
@@ -172,17 +171,39 @@ Salmón fresco 0,4 kg</div>
     </div>
 
     <div class="grid g2" style="margin-top:30px">
-      <figure class="shot" style="margin:0">
-        <img src="/shot-factura.png" width="1440" height="840"
-             alt="Albarán reconocido en Ritmo OPS: líneas enlazadas con el catálogo e IVA por línea">
-        <figcaption>El documento a la izquierda, las líneas reconocidas a la derecha. Nada se envía sin cuadrar.</figcaption>
-      </figure>
-      <figure class="shot" style="margin:0">
-        <img src="/shot-traspaso.png" width="1440" height="840"
-             alt="Albarán de salida entre locales con coste, margen y precio por línea">
-        <figcaption>Una salida, dos documentos: salida en un local, entrada en el otro, con la misma referencia.</figcaption>
-      </figure>
-    </div>
+<div class="demo">
+  <h4>Del albar&aacute;n a las l&iacute;neas</h4>
+  <div class="paper">
+    <div class="ph">Distribuciones del Turia, S.L.</div>
+    <div class="pm">CIF B98765432 &middot; ALB-2026/1187 &middot; 24/09/2026</div>
+    <table>
+      <tr><td>Tomate pera caja 10 kg</td><td class="n">10 kg</td><td class="n">1,45</td><td class="n">14,50</td></tr>
+      <tr><td>Salm&oacute;n fresco</td><td class="n">2 kg</td><td class="n">17,90</td><td class="n">35,80</td></tr>
+      <tr><td>Pan de centeno</td><td class="n">20 ud</td><td class="n">0,82</td><td class="n">16,40</td></tr>
+      <tr><td>Leche entera 1 L</td><td class="n">12 ud</td><td class="n">0,78</td><td class="n">9,36</td></tr>
+    </table>
+    <div class="pf">Base 76,06 &middot; IVA 4 % 1,24 &middot; IVA 10 % 4,52 &middot; <b>Total 81,82</b></div>
+  </div>
+  <div class="arrowdown">&darr;</div>
+  <div class="match-list">
+    <div class="mrow"><span class="src">Tomate pera caja 10 kg</span><span class="to">&rarr;</span><span class="dst">Tomate</span><span class="qty">10 kg &middot; 1,45 &euro;</span></div>
+    <div class="mrow"><span class="src">Salm&oacute;n fresco</span><span class="to">&rarr;</span><span class="dst">Salm&oacute;n fresco</span><span class="qty">2 kg &middot; 17,90 &euro;</span></div>
+    <div class="mrow"><span class="src">Pan de centeno</span><span class="to">&rarr;</span><span class="dst">Pan de centeno</span><span class="qty">20 ud &middot; 0,82 &euro;</span></div>
+    <div class="mrow"><span class="src">Leche entera 1 L</span><span class="to">&rarr;</span><span class="dst">Leche entera 1 L</span><span class="qty">12 ud &middot; 0,78 &euro;</span></div>
+  </div>
+  <p class="ok-line">&check; Las l&iacute;neas cuadran con el pie del documento</p>
+</div><div class="demo">
+  <h4>Un mensaje, dos documentos</h4>
+  <div class="bubble">Obrador / Para Cocina Centro
+Pan de centeno 20 ud
+Leche entera 6 ud</div>
+  <div class="arrowdown">&darr;</div>
+  <div class="docline"><span><b>Albar&aacute;n de salida</b> &middot; Obrador</span><span class="tag">2 art&iacute;culos</span></div>
+  <div class="docline"><span><b>Albar&aacute;n de entrada</b> &middot; Cocina Centro</span><span class="tag">misma referencia</span></div>
+  <div class="mrow"><span class="src">Pan de centeno</span><span class="to">&rarr;</span><span class="dst">Pan de centeno</span><span class="qty">20 ud &middot; 0,90 &euro;</span></div>
+  <div class="mrow"><span class="src">Leche entera</span><span class="to">&rarr;</span><span class="dst">Leche entera 1 L</span><span class="qty">6 ud &middot; 0,70 &euro;</span></div>
+  <p class="ok-line">&check; A precio de coste del almac&eacute;n que entrega</p>
+</div>    </div>
   </div>
 </section>
 

@@ -46,12 +46,28 @@
       <a class="btn ghost" href="/#precios">Ver precios</a>
     </div>
 
-    <figure class="shot">
-      <img src="/shot-factura.png" width="1440" height="840"
-           alt="Albarán de proveedor leído por Ritmo OPS con líneas, IVA y totales comprobados">
-      <figcaption>El documento a la izquierda, las líneas leídas a la derecha: cantidades, precios, IVA y totales.</figcaption>
-    </figure>
+<div class="demo">
+  <h4>Del albar&aacute;n a las l&iacute;neas</h4>
+  <div class="paper">
+    <div class="ph">Distribuciones del Turia, S.L.</div>
+    <div class="pm">CIF B98765432 &middot; ALB-2026/1187 &middot; 24/09/2026</div>
+    <table>
+      <tr><td>Tomate pera caja 10 kg</td><td class="n">10 kg</td><td class="n">1,45</td><td class="n">14,50</td></tr>
+      <tr><td>Salm&oacute;n fresco</td><td class="n">2 kg</td><td class="n">17,90</td><td class="n">35,80</td></tr>
+      <tr><td>Pan de centeno</td><td class="n">20 ud</td><td class="n">0,82</td><td class="n">16,40</td></tr>
+      <tr><td>Leche entera 1 L</td><td class="n">12 ud</td><td class="n">0,78</td><td class="n">9,36</td></tr>
+    </table>
+    <div class="pf">Base 76,06 &middot; IVA 4 % 1,24 &middot; IVA 10 % 4,52 &middot; <b>Total 81,82</b></div>
   </div>
+  <div class="arrowdown">&darr;</div>
+  <div class="match-list">
+    <div class="mrow"><span class="src">Tomate pera caja 10 kg</span><span class="to">&rarr;</span><span class="dst">Tomate</span><span class="qty">10 kg &middot; 1,45 &euro;</span></div>
+    <div class="mrow"><span class="src">Salm&oacute;n fresco</span><span class="to">&rarr;</span><span class="dst">Salm&oacute;n fresco</span><span class="qty">2 kg &middot; 17,90 &euro;</span></div>
+    <div class="mrow"><span class="src">Pan de centeno</span><span class="to">&rarr;</span><span class="dst">Pan de centeno</span><span class="qty">20 ud &middot; 0,82 &euro;</span></div>
+    <div class="mrow"><span class="src">Leche entera 1 L</span><span class="to">&rarr;</span><span class="dst">Leche entera 1 L</span><span class="qty">12 ud &middot; 0,78 &euro;</span></div>
+  </div>
+  <p class="ok-line">&check; Las l&iacute;neas cuadran con el pie del documento</p>
+</div>  </div>
 </section>
 
 <section class="tint">
