@@ -1,365 +1,47 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ritmo OPS — albaranes, mermas y traspasos automáticos para restaurantes</title>
-<meta name="description" content="Plataforma que automatiza la documentación primaria: fotos de albaranes y mensajes del equipo se convierten en documentos contabilizados —entradas, actas de baja, traspasos entre locales y producción— en dos clics.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritmo OPS — automatización y sistemas de gestión para empresas</title>
+<meta name="description" content="Diseñamos e implantamos soluciones de automatización, CRM, ERP y plataformas operativas a medida. Además, Ritmo OPS automatiza la carga de albaranes y facturas.">
 <link rel="canonical" href="https://ritmo-ops.com/">
-<link rel="alternate" hreflang="es" href="https://ritmo-ops.com/">
-<link rel="alternate" hreflang="ru" href="https://ritmo-ops.com/ru.html">
-<link rel="alternate" hreflang="en" href="https://ritmo-ops.com/en.html">
-<link rel="alternate" hreflang="x-default" href="https://ritmo-ops.com/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ritmo-ops.com/">
-<meta property="og:title" content="Ritmo OPS — albaranes, mermas y traspasos automáticos">
-<meta property="og:description" content="De la foto del albarán al documento contabilizado en dos clics. Nos integramos con vuestro sistema de gestión.">
-<meta property="og:image" content="https://ritmo-ops.com/og.png">
-<meta property="og:locale" content="es_ES">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Ritmo OPS",
-"applicationCategory":"BusinessApplication","operatingSystem":"Web",
-"description":"Plataforma de automatización de la documentación primaria: reconocimiento de albaranes y facturas, actas de baja, traspasos entre locales y producción, con carga automática en el sistema de gestión del cliente.",
-"url":"https://ritmo-ops.com/","inLanguage":["es","ru","en"],
-"offers":[{"@type":"Offer","name":"Start","price":"49","priceCurrency":"EUR"},
-{"@type":"Offer","name":"Pro","price":"129","priceCurrency":"EUR"},
-{"@type":"Offer","name":"Network","price":"249","priceCurrency":"EUR"}],
-"featureList":["OCR de albaranes y facturas","Conciliación automática con vuestro catálogo","Actas de baja desde el chat","Traspasos entre locales","Actas de producción","Control de precios de proveedores","Integración por API con el sistema de gestión"]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"¿Con qué sistemas se integra Ritmo OPS?","acceptedAnswer":{"@type":"Answer","text":"Nos integramos con vuestro sistema de gestión por API: los documentos se cargan ya contabilizados, sin exportar ni teclear. La integración con Syrve está en producción y el resto de conexiones las montamos nosotros."}},
-{"@type":"Question","name":"¿Hay que enseñar a la plantilla a usar un programa nuevo?","acceptedAnswer":{"@type":"Answer","text":"No. El personal sigue haciendo la foto del albarán y escribiendo en el grupo de siempre. El trabajo con los documentos lo hace quien lleva la contabilidad."}},
-{"@type":"Question","name":"¿Qué pasa si el reconocimiento se equivoca?","acceptedAnswer":{"@type":"Answer","text":"Nada se contabiliza sin vuestra autorización. Ritmo avisa cuando las sumas o el IVA no cuadran y propone el ajuste; cada corrección se recuerda para la próxima vez."}},
-{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Desde 49 € al mes por local con 100 documentos incluidos. Pro 129 € con 400 documentos y Network 249 € con 1.000. IVA no incluido."}},
-{"@type":"Question","name":"¿Dónde se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"En servidores en la Unión Europea. Las credenciales de vuestro sistema se guardan cifradas y no se muestran a nadie, ni siquiera a nosotros."}}]}
-</script>
+<link rel="alternate" hreflang="es" href="https://ritmo-ops.com/"><link rel="alternate" hreflang="ru" href="https://ritmo-ops.com/ru.html"><link rel="alternate" hreflang="en" href="https://ritmo-ops.com/en.html"><link rel="alternate" hreflang="x-default" href="https://ritmo-ops.com/">
+<meta property="og:type" content="website"><meta property="og:url" content="https://ritmo-ops.com/"><meta property="og:title" content="Ritmo OPS — automatización y sistemas de gestión para empresas"><meta property="og:description" content="Diseñamos e implantamos soluciones de automatización, CRM, ERP y plataformas operativas a medida. Además, Ritmo OPS automatiza la carga de albaranes y facturas."><meta property="og:image" content="https://ritmo-ops.com/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="/">
-      <span class="mark"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c7b8f2"/><stop offset="1" stop-color="#8a74d2"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g)"/><path d="M12 34 H22 L27 22 L34 44 L39 30 L43 34 H52" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      Ritmo <b>OPS</b>
-    </a>
-    <nav class="menu">
-      <a href="/restaurantes.html">Restaurantes</a>
-      <a href="/comercio.html">Comercio</a>
-      <a href="#precios">Precios</a>
-      <a href="#faq">Preguntas</a>
-      <a class="btn" href="#demo">Solicitar demo</a>
-    </nav>
-    <div class="lang" style="margin-left:auto">
-      <a href="/" aria-current="page">ES</a><a href="/ru.html">RU</a><a href="/en.html">EN</a>
-    </div>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Plataforma de documentación primaria</p>
-    <h1>Toda la primera documentación, en dos clics</h1>
-    <p class="lead">Ritmo OPS lee las fotos de los albaranes y los mensajes de vuestros grupos de
-      Telegram y los convierte en documentos contabilizados: entradas, actas de baja, salidas entre
-      locales y producción. El equipo sigue trabajando como siempre; a vosotros os queda mirar y
-      confirmar. Nos integramos con vuestro sistema de gestión.</p>
-    <div class="cta">
-      <a class="btn" href="#demo">Solicitar una demo</a>
-      <a class="btn ghost" href="#como">Ver cómo funciona</a>
-    </div>
-
-<div class="demo" style="margin-top:38px">
-  <h4>Todos los albaranes del local, en una lista</h4>
-  <div class="doclist">
-    <div class="drow"><span class="num">ALB-2026/1187</span><span class="sup">Distribuciones del Turia</span><span class="sum">81,82 &euro;</span><span class="pill ok">Contabilizado</span></div>
-    <div class="drow"><span class="num">FV-9921</span><span class="sup">Frutas y Verduras La Huerta</span><span class="sum">42,95 &euro;</span><span class="pill ok">Contabilizado</span></div>
-    <div class="drow"><span class="num">PP-2026/455</span><span class="sup">Pescados del Puerto</span><span class="sum">78,76 &euro;</span><span class="pill rdy">Listo para enviar</span></div>
-    <div class="drow"><span class="num">LM-7781</span><span class="sup">L&aacute;cteos Mediterr&aacute;neo</span><span class="sum">25,74 &euro;</span><span class="pill wait">Requiere una mirada</span></div>
-  </div>
-  <p class="muted" style="margin:14px 0 0;font-size:14px">Solo lo amarillo pide atenci&oacute;n. El resto ya est&aacute; en vuestro sistema.</p>
-</div>  </div>
-</section>
-
-<section class="tint">
-  <div class="wrap">
-    <h2>Lo que pasa hoy en casi todos los restaurantes</h2>
-    <div class="grid g3" style="margin-top:26px">
-      <div class="card">
-        <h3><span class="ico">⏱</span> Horas tecleando</h3>
-        <p>Alguien copia a mano cada línea de cada albarán en el sistema. Un albarán de veinte
-          líneas son diez minutos; treinta albaranes a la semana, una jornada entera.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">📉</span> Mermas que nadie registra</h3>
-        <p>La cocina escribe en el grupo lo que se ha estropeado, y ahí se queda. El inventario
-          no cuadra y el food cost real aparece a final de mes, cuando ya no se puede corregir.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🔀</span> Traspasos entre locales</h3>
-        <p>Un local presta producto a otro, se avisa por el chat y no se documenta. El stock de
-          los dos queda mal y el coste se va al local equivocado.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="como">
-  <div class="wrap">
-    <h2>Cómo funciona</h2>
-    <p class="lead">Cuatro pasos, y tres de ellos no los hace nadie.</p>
-    <ol class="steps">
-      <li><b>Llega el documento</b>Una foto del albarán o un mensaje en el grupo: «Merma: tomate 2 kg».</li>
-      <li><b>Ritmo lo lee</b>Proveedor, número, fecha, líneas, IVA por tipo y totales del pie.</li>
-      <li><b>Lo reconoce</b>Cada línea se enlaza con vuestro artículo. Lo que corriges una vez, se recuerda.</li>
-      <li><b>Se contabiliza</b>Dos clics: revisas y confirmas. O sale solo cuando todo cuadra.</li>
-    </ol>
-
-    <div style="margin-top:34px; max-width:760px">
-      <div class="chat">
-        <p class="eyebrow" style="margin-bottom:10px">En el grupo del local</p>
-        <div class="bubble">Merma
-Tomate pera 2 kg
-Salmón fresco 0,4 kg</div>
-        <div class="arrowdown">↓</div>
-        <div class="docline"><span><b>Acta de baja</b> · Cocina Centro</span><span class="tag">2 artículos</span></div>
-        <div class="docline"><span>Tomate pera → Tomate · 2 kg</span><b>Merma</b></div>
-        <div class="docline"><span>Salmón fresco → Salmón fresco · 0,4 kg</span><b>Merma</b></div>
-        <p class="muted" style="margin:10px 0 0; font-size:14px">Los mensajes del día se juntan en una sola acta y por la noche se contabiliza sola.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="tint">
-  <div class="wrap">
-    <h2>Qué hace Ritmo OPS</h2>
-    <div class="grid g3" style="margin-top:26px">
-      <div class="card">
-        <h3><span class="ico">📄</span> Albaranes y facturas</h3>
-        <p>Foto, PDF o mensaje de Telegram. Lee líneas, descuentos por línea y el descuento global,
-          y cuadra el pie con varios tipos de IVA.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🧮</span> IVA que cuadra</h3>
-        <p>Si el total con IVA no coincide con el documento, Ritmo lo dice y propone los tipos
-          4 / 10 / 21 que hacen cuadrar la suma. Los impuestos de envases se separan aparte.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🔗</span> Memoria del catálogo</h3>
-        <p>«RPET SUSHI YOKI 0.8» es vuestro «Envase sushi 0,8». Se enlaza una vez y el resto de
-          albaranes de ese proveedor se rellenan solos.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🗑</span> Actas de baja</h3>
-        <p>Las mermas, la comida de personal y las pruebas se escriben en el grupo como siempre.
-          Una acta por día y por local, con su cuenta de baja.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🚚</span> Salidas entre locales</h3>
-        <p>«Obrador / Para Cocina Centro» crea el albarán de salida en el emisor y el de entrada
-          en el receptor, a precio de coste o con el margen que decidáis.</p>
-      </div>
-      <div class="card">
-        <h3><span class="ico">🥖</span> Producción</h3>
-        <p>El obrador escribe lo que ha horneado: se descuentan los ingredientes por el escandallo
-          y entra el producto terminado.</p>
-      </div>
-    </div>
-
-    <div class="grid g2" style="margin-top:30px">
-<div class="demo">
-  <h4>Del albar&aacute;n a las l&iacute;neas</h4>
-  <div class="paper">
-    <div class="ph">Distribuciones del Turia, S.L.</div>
-    <div class="pm">CIF B98765432 &middot; ALB-2026/1187 &middot; 24/09/2026</div>
-    <table>
-      <tr><td>Tomate pera caja 10 kg</td><td class="n">10 kg</td><td class="n">1,45</td><td class="n">14,50</td></tr>
-      <tr><td>Salm&oacute;n fresco</td><td class="n">2 kg</td><td class="n">17,90</td><td class="n">35,80</td></tr>
-      <tr><td>Pan de centeno</td><td class="n">20 ud</td><td class="n">0,82</td><td class="n">16,40</td></tr>
-      <tr><td>Leche entera 1 L</td><td class="n">12 ud</td><td class="n">0,78</td><td class="n">9,36</td></tr>
-    </table>
-    <div class="pf">Base 76,06 &middot; IVA 4 % 1,24 &middot; IVA 10 % 4,52 &middot; <b>Total 81,82</b></div>
-  </div>
-  <div class="arrowdown">&darr;</div>
-  <div class="match-list">
-    <div class="mrow"><span class="src">Tomate pera caja 10 kg</span><span class="to">&rarr;</span><span class="dst">Tomate</span><span class="qty">10 kg &middot; 1,45 &euro;</span></div>
-    <div class="mrow"><span class="src">Salm&oacute;n fresco</span><span class="to">&rarr;</span><span class="dst">Salm&oacute;n fresco</span><span class="qty">2 kg &middot; 17,90 &euro;</span></div>
-    <div class="mrow"><span class="src">Pan de centeno</span><span class="to">&rarr;</span><span class="dst">Pan de centeno</span><span class="qty">20 ud &middot; 0,82 &euro;</span></div>
-    <div class="mrow"><span class="src">Leche entera 1 L</span><span class="to">&rarr;</span><span class="dst">Leche entera 1 L</span><span class="qty">12 ud &middot; 0,78 &euro;</span></div>
-  </div>
-  <p class="ok-line">&check; Las l&iacute;neas cuadran con el pie del documento</p>
-</div><div class="demo">
-  <h4>Un mensaje, dos documentos</h4>
-  <div class="bubble">Obrador / Para Cocina Centro
-Pan de centeno 20 ud
-Leche entera 6 ud</div>
-  <div class="arrowdown">&darr;</div>
-  <div class="docline"><span><b>Albar&aacute;n de salida</b> &middot; Obrador</span><span class="tag">2 art&iacute;culos</span></div>
-  <div class="docline"><span><b>Albar&aacute;n de entrada</b> &middot; Cocina Centro</span><span class="tag">misma referencia</span></div>
-  <div class="mrow"><span class="src">Pan de centeno</span><span class="to">&rarr;</span><span class="dst">Pan de centeno</span><span class="qty">20 ud &middot; 0,90 &euro;</span></div>
-  <div class="mrow"><span class="src">Leche entera</span><span class="to">&rarr;</span><span class="dst">Leche entera 1 L</span><span class="qty">6 ud &middot; 0,70 &euro;</span></div>
-  <p class="ok-line">&check; A precio de coste del almac&eacute;n que entrega</p>
-</div>    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>¿Para quién es?</h2>
-    <div class="grid g2" style="margin-top:22px">
-      <div class="card">
-        <h3>Restaurantes y grupos de locales</h3>
-        <p>Con uno o con veinte locales, Ritmo OPS cierra el círculo del almacén: entradas, mermas,
-          traspasos y producción, sin que nadie teclee una línea.</p>
-        <p><a href="/restaurantes.html">Ver la página para restaurantes →</a></p>
-      </div>
-      <div class="card">
-        <h3>Comercio y almacenes</h3>
-        <p>El reconocimiento de albaranes y el control de precios funcionan igual fuera de la
-          hostelería, y nos integramos con el sistema que ya tengáis.</p>
-        <p><a href="/comercio.html">Ver la página para comercio →</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="precios" class="tint">
-  <div class="wrap">
-    <h2>Precios</h2>
-    <p class="lead">Por local y mes. Sin permanencia. IVA no incluido.</p>
-    <div class="plans">
-      <div class="plan">
-        <h3>Start</h3>
-        <p class="price">49 € <span>/ mes</span></p>
-        <ul>
-          <li>1 local</li>
-          <li>100 documentos al mes</li>
-          <li>Albaranes, bajas, salidas y producción</li>
-          <li>Integración con vuestro sistema</li>
-        </ul>
-        <a class="btn ghost" href="#demo">Empezar</a>
-      </div>
-      <div class="plan best">
-        <h3>Pro</h3>
-        <p class="price">129 € <span>/ mes</span></p>
-        <ul>
-          <li>Hasta 3 locales</li>
-          <li>400 documentos al mes</li>
-          <li>Control de precios de proveedores</li>
-          <li>Soporte por Telegram</li>
-        </ul>
-        <a class="btn" href="#demo">Solicitar demo</a>
-      </div>
-      <div class="plan">
-        <h3>Network</h3>
-        <p class="price">249 € <span>/ mes</span></p>
-        <ul>
-          <li>Red de locales</li>
-          <li>1.000 documentos al mes</li>
-          <li>Varias sociedades y licencias</li>
-          <li>Alta y formación incluidas</li>
-        </ul>
-        <a class="btn ghost" href="#demo">Hablemos</a>
-      </div>
-    </div>
-    <p class="muted" style="margin-top:16px; font-size:15px">Documento extra: 0,25 €. Pago anual por adelantado: −10 %.
-      Domiciliación SEPA o transferencia.</p>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <h2>Preguntas frecuentes</h2>
-    <div style="margin-top:22px">
-      <details open>
-        <summary>¿Con qué sistemas se integra?</summary>
-        <p>Con el vuestro. Ritmo OPS carga los documentos ya contabilizados por API, sin exportaciones
-          ni ficheros intermedios: entradas, actas de baja, albaranes de salida y producción. La
-          integración con Syrve está en producción; el resto de conexiones las montamos nosotros.</p>
-      </details>
-      <details>
-        <summary>¿Hay que enseñar a la plantilla a usar un programa nuevo?</summary>
-        <p>No. La cocina y la sala siguen haciendo la foto del albarán y escribiendo en el grupo de
-          siempre. Con el programa trabaja quien lleva la contabilidad, y sobre todo revisa.</p>
-      </details>
-      <details>
-        <summary>¿Y si el reconocimiento se equivoca?</summary>
-        <p>Mientras no lo autoricéis, nada se contabiliza. Ritmo avisa cuando las sumas o el IVA no
-          cuadran y propone el ajuste. Cada corrección que hacéis se recuerda para el siguiente albarán
-          de ese proveedor.</p>
-      </details>
-      <details>
-        <summary>¿Cuánto se tarda en arrancar?</summary>
-        <p>Una tarde: conectamos vuestro sistema, damos de alta los locales y sus almacenes y añadimos
-          el bot a los grupos. Los primeros albaranes se enlazan a mano; a partir de ahí el catálogo ya
-          se conoce.</p>
-      </details>
-      <details>
-        <summary>¿Dónde se guardan los datos?</summary>
-        <p>En servidores en la Unión Europea. Las credenciales de vuestro sistema se guardan cifradas
-          y no se muestran en ninguna pantalla.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section id="demo">
-  <div class="wrap">
-    <div class="final">
-      <h2>Vemos vuestros albaranes en una llamada de 20 minutos</h2>
-      <p class="muted" style="max-width:40em;margin:0 auto 22px">Enviadnos dos o tres albaranes de
-        vuestros proveedores habituales. En la demo los leemos en directo y decís si os sirve.</p>
-      <p><a class="btn" href="#demo" data-copy="ritmoops@gmail.com" data-done="¡Copiado!" title="Clic para copiar">ritmoops@gmail.com</a></p>
-      <p class="muted" style="font-size:14px;margin-top:14px">Valencia, España · respondemos el mismo día</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap cols">
-    <div class="legal">
-      <p><strong>Ritmo OPS</strong> — automatización de la documentación primaria para restaurantes y comercio.<br>
-        Albaranes, actas de baja, traspasos y producción, contabilizados en vuestro sistema.</p>
-      <p>© 2026 Ritmo OPS · Valencia, España</p>
-    </div>
-    <div>
-      <p><a href="/restaurantes.html">Restaurantes</a><br>
-        <a href="/comercio.html">Comercio</a><br>
-        <a href="#precios">Precios</a></p>
-    </div>
-    <div>
-      <p><a href="/privacidad.html">Privacidad</a><br>
-        <a href="#demo" data-copy="ritmoops@gmail.com" data-done="¡Copiado!" title="Clic para copiar">ritmoops@gmail.com</a><br>
-        <a href="https://app.ritmo-ops.com">Entrar en la aplicación</a></p>
-    </div>
-  </div>
-</footer>
-
+<header class="top"><div class="wrap"><a class="brand" href="/"><span class="mark"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9eafff"/><stop offset="1" stop-color="#4058d6"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g)"/><path d="M12 34 H22 L27 22 L34 44 L39 30 L43 34 H52" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ritmo <b>OPS</b></a><nav class="menu"><a href="#soluciones">Soluciones</a><a href="#demos">Plataformas demo</a><a href="#albaranes">Albaranes</a><a href="#metodo">Cómo trabajamos</a><a href="#contacto">Contactar</a><a class="btn" href="#contacto">Cuéntanos tu proyecto</a></nav><div class="lang"><a href="/" aria-current="page">ES</a><a href="/ru.html" >RU</a><a href="/en.html" >EN</a></div></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<p class="eyebrow">Automatización · CRM · ERP · Operaciones</p><h1>Tu negocio, conectado y automatizado de principio a fin</h1><p class="lead">Ritmo OPS analiza cómo trabaja tu empresa, optimiza los procesos y configura o desarrolla los sistemas que necesitas: CRM, ERP, paneles de control e integraciones. También ofrecemos nuestra plataforma para automatizar la carga de albaranes y facturas.</p>
+<div class="cta"><a class="btn" href="#contacto">Cuéntanos tu proyecto</a><a class="btn ghost" href="#demos">Explorar demos</a></div>
+<div class="hero-proof"><span>Soluciones adaptadas a tu negocio</span><span>Integración con herramientas existentes</span><span>Acompañamiento de principio a fin</span></div>
+</div><div class="dashboard-shell"><div class="dash-top"><span>Panel operativo · ejemplo interactivo</span><span class="dash-dots"><i></i><i></i><i></i></span></div><div class="dash-app"><div class="dash-title"><div><h3>Panel operativo</h3><span class="dash-label">Actividad por semana</span></div><span class="dash-badge">DEMO VISUAL</span></div><div class="kpi-grid"><div class="kpi"><small>Operaciones</small><strong>1.284</strong><em>+12,8%</em></div><div class="kpi"><small>Coste operativo</small><strong>€ 42.680</strong><em>−6,4%</em></div><div class="kpi"><small>Tareas a tiempo</small><strong>94,6%</strong><em>+4,2%</em></div></div><div class="mini-chart"><div class="chart-head"><span>Actividad por semana</span><span>7 días</span></div><div class="chart-bars"><span style="height:38%"></span><span style="height:58%"></span><span style="height:44%"></span><span style="height:75%"></span><span style="height:61%"></span><span style="height:88%"></span><span style="height:69%"></span></div><div class="chart-foot"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div></div></div></div></div></section>
+<section id="soluciones" class="tint"><div class="wrap"><div class="section-head"><p class="eyebrow">Soluciones para tu negocio</p><h2>No vendemos una herramienta única. Diseñamos el sistema que necesita tu empresa.</h2><p class="lead">Desde optimizar un proceso concreto hasta conectar departamentos, datos y aplicaciones en una plataforma de trabajo coherente.</p></div><div class="grid g3"><article class="service-card"><div class="ico">⚙</div><h3>Automatización de procesos</h3><p>Eliminamos tareas manuales repetitivas y conectamos los pasos entre personas, documentos y sistemas.</p></article><article class="service-card"><div class="ico">▦</div><h3>CRM y gestión comercial</h3><p>Organizamos leads, clientes, ventas, seguimiento, tareas y métricas comerciales.</p></article><article class="service-card"><div class="ico">▤</div><h3>ERP y operaciones</h3><p>Diseñamos flujos para compras, inventario, producción, sucursales, costes y operaciones diarias.</p></article><article class="service-card"><div class="ico">▥</div><h3>Dashboards y analítica</h3><p>Convertimos datos dispersos en indicadores claros para controlar rendimiento, costes, incidencias y resultados.</p></article><article class="service-card"><div class="ico">↔</div><h3>Integraciones entre sistemas</h3><p>Conectamos herramientas, formularios, correo, mensajería, POS, contabilidad y servicios externos cuando existe una vía técnica adecuada.</p></article><article class="service-card"><div class="ico">✳</div><h3>Plataformas a medida</h3><p>Creamos portales internos, paneles de equipo y aplicaciones adaptadas al proceso real de tu negocio.</p></article></div></div></section>
+<section id="demos" class="dash-section"><div class="wrap"><div class="section-head"><p class="eyebrow">Ejemplos interactivos</p><h2>Ejemplos de plataformas que podemos diseñar</h2><p class="lead">Explora los paneles de muestra. Son demostraciones visuales con datos ficticios para enseñar cómo podría organizarse la información de tu empresa; no son métricas de clientes reales.</p></div>
+<div class="dashboard-demo"><div class="dash-title"><div><h3>Resumen de operaciones</h3><span class="dash-label">Vista de control · datos de ejemplo</span></div><span class="dash-badge">Datos ficticios · demo ilustrativa</span></div>
+<div class="demo-tabs" role="tablist" aria-label="Ejemplos interactivos"><button type="button" role="tab" aria-selected="true" data-dashboard-tab="0">Operaciones</button><button type="button" role="tab" aria-selected="false" data-dashboard-tab="1">Finanzas</button><button type="button" role="tab" aria-selected="false" data-dashboard-tab="2">Inventario</button><button type="button" role="tab" aria-selected="false" data-dashboard-tab="3">Ventas</button></div><div class="demo-metrics" data-dashboard-panel="0" ><div class="demo-metric"><small>Tareas abiertas</small><strong>24</strong><span>8 requieren atención</span></div><div class="demo-metric"><small>Tiempo medio</small><strong>2,4 h</strong><span>−18% vs. periodo anterior</span></div><div class="demo-metric"><small>Incidencias</small><strong>6</strong><span>2 críticas</span></div><div class="demo-metric"><small>Procesos al día</small><strong>92%</strong><span>+5 puntos</span></div></div><div class="demo-metrics" data-dashboard-panel="1" hidden><div class="demo-metric"><small>Ingresos del mes</small><strong>€ 86.420</strong><span>+8,3% vs. periodo anterior</span></div><div class="demo-metric"><small>Gastos</small><strong>€ 51.780</strong><span>Dentro del presupuesto</span></div><div class="demo-metric"><small>Margen operativo</small><strong>24,6%</strong><span>+2,1 puntos</span></div><div class="demo-metric"><small>Facturas pendientes</small><strong>18</strong><span>6 vencen esta semana</span></div></div><div class="demo-metrics" data-dashboard-panel="2" hidden><div class="demo-metric"><small>Referencias activas</small><strong>1.248</strong><span>En 3 almacenes</span></div><div class="demo-metric"><small>Stock bajo</small><strong>17</strong><span>Revisar reposición</span></div><div class="demo-metric"><small>Rotación</small><strong>8,2x</strong><span>Por periodo</span></div><div class="demo-metric"><small>Diferencia inventario</small><strong>1,7%</strong><span>−0,6 puntos</span></div></div><div class="demo-metrics" data-dashboard-panel="3" hidden><div class="demo-metric"><small>Oportunidades</small><strong>146</strong><span>+11% vs. periodo anterior</span></div><div class="demo-metric"><small>Pipeline</small><strong>€ 214.000</strong><span>Ponderado</span></div><div class="demo-metric"><small>Conversión</small><strong>28,4%</strong><span>+3,2 puntos</span></div><div class="demo-metric"><small>Ventas cerradas</small><strong>32</strong><span>Este mes</span></div></div><div data-dashboard-table="0" ><table class="demo-table"><thead><tr><th>Proceso / área</th><th>Estado</th><th>Responsable</th><th>Actualizado</th></tr></thead><tbody><tr><td>Pedidos de compra</td><td><span class="demo-status">En curso</span></td><td>Operaciones</td><td>Hace 8 min</td></tr><tr><td>Conciliación de facturas</td><td><span class="demo-status warn">Revisar</span></td><td>Administración</td><td>Hace 21 min</td></tr><tr><td>Seguimiento comercial</td><td><span class="demo-status">Al día</span></td><td>Ventas</td><td>Hace 35 min</td></tr></tbody></table></div><div data-dashboard-table="1" hidden><table class="demo-table"><thead><tr><th>Área</th><th>Estado</th><th>Responsable</th><th>Actualizado</th></tr></thead><tbody><tr><td>Cuentas por pagar</td><td><span class="demo-status">En curso</span></td><td>Administración</td><td>Hace 8 min</td></tr><tr><td>Facturas pendientes</td><td><span class="demo-status warn">Revisar</span></td><td>Finanzas</td><td>Hace 21 min</td></tr><tr><td>Cierre mensual</td><td><span class="demo-status">Al día</span></td><td>Contabilidad</td><td>Hace 35 min</td></tr></tbody></table></div><div data-dashboard-table="2" hidden><table class="demo-table"><thead><tr><th>Almacén</th><th>Estado</th><th>Responsable</th><th>Actualizado</th></tr></thead><tbody><tr><td>Almacén central</td><td><span class="demo-status">Al día</span></td><td>Logística</td><td>Hace 8 min</td></tr><tr><td>Reposición de stock</td><td><span class="demo-status warn">Revisar</span></td><td>Compras</td><td>Hace 21 min</td></tr><tr><td>Inventario semanal</td><td><span class="demo-status">En curso</span></td><td>Operaciones</td><td>Hace 35 min</td></tr></tbody></table></div><div data-dashboard-table="3" hidden><table class="demo-table"><thead><tr><th>Etapa comercial</th><th>Estado</th><th>Responsable</th><th>Actualizado</th></tr></thead><tbody><tr><td>Nuevos leads</td><td><span class="demo-status">En curso</span></td><td>Ventas</td><td>Hace 8 min</td></tr><tr><td>Propuestas enviadas</td><td><span class="demo-status warn">Al día</span></td><td>Comercial</td><td>Hace 21 min</td></tr><tr><td>Renovaciones</td><td><span class="demo-status">Revisar</span></td><td>Account manager</td><td>Hace 35 min</td></tr></tbody></table></div><p class="dashboard-note">Explora los paneles de muestra. Son demostraciones visuales con datos ficticios para enseñar cómo podría organizarse la información de tu empresa; no son métricas de clientes reales.</p></div></div></section>
+<section id="metodo"><div class="wrap"><div class="section-head"><p class="eyebrow">Cómo trabajamos</p><h2>De la necesidad al sistema funcionando</h2><p class="lead">No imponemos una plataforma estándar si no encaja. Primero entendemos el proceso; después diseñamos, conectamos y mejoramos.</p></div><div class="grid g2"><article class="process-card"><div class="process-number">1</div><h3>Diagnóstico</h3><p class="muted">Mapeamos procesos, tareas repetitivas, sistemas actuales y puntos de pérdida de tiempo o información.</p></article><article class="process-card"><div class="process-number">2</div><h3>Diseño de solución</h3><p class="muted">Definimos el flujo, los roles, los datos, las integraciones y los indicadores que realmente necesitas.</p></article><article class="process-card"><div class="process-number">3</div><h3>Implementación</h3><p class="muted">Configuramos herramientas existentes o desarrollamos los módulos y conexiones necesarios.</p></article><article class="process-card"><div class="process-number">4</div><h3>Puesta en marcha y mejora</h3><p class="muted">Probamos con tu equipo, documentamos el uso y ajustamos el sistema según los resultados.</p></article></div></div></section>
+<section id="albaranes" class="tint"><div class="wrap grid g2" style="align-items:center"><div><p class="eyebrow">Producto especializado</p><h2>Ritmo OPS también automatiza albaranes y facturas</h2><p class="lead">Nuestra solución para la documentación primaria permite cargar albaranes y facturas, extraer datos y preparar el registro para revisión e integración con el sistema de gestión. Es una aplicación concreta dentro de nuestra oferta de automatización.</p><ul><li>Carga de albaranes y facturas</li><li>Extracción y comprobación de datos</li><li>Flujos de revisión antes de contabilizar</li><li>Integración con sistemas compatibles</li></ul><a class="btn" href="https://app.ritmo-ops.com" target="_blank" rel="noopener">Abrir Ritmo OPS</a></div><div class="demo"><h4>Plataforma de albaranes</h4><div class="doclist">
+<div class="drow"><span class="num">ALB-2026/1187</span><span class="sup">Proveedor · ejemplo</span><span class="sum">81,82 €</span><span class="pill ok">Revisado</span></div>
+<div class="drow"><span class="num">FV-9921</span><span class="sup">Factura · ejemplo</span><span class="sum">42,95 €</span><span class="pill rdy">Preparado</span></div>
+<div class="drow"><span class="num">PP-2026/455</span><span class="sup">Pendiente de revisión</span><span class="sum">78,76 €</span><span class="pill wait">Revisar</span></div></div><p class="dashboard-note">Datos ficticios · demo ilustrativa</p></div></div></section>
+<section class="tint"><div class="wrap"><div class="section-head"><h2>С чего начать?</h2><p class="lead">Необязательно сразу менять все системы. Можно начать с одного процесса и расширять решение по мере необходимости.</p></div><div class="grid g3"><article class="card"><h3>Одна задача</h3><p>Например, автоматизировать загрузку документов или подготовку регулярного отчёта.</p></article><article class="card"><h3>Связать отделы</h3><p>Объединить единым процессом продажи, финансы, склад и операционный блок.</p></article><article class="card"><h3>Система под ключ</h3><p>Спроектировать и внедрить набор инструментов, интеграций и панелей для компании.</p></article></div></div></section>
+<section id="contacto"><div class="wrap"><div class="final"><p class="eyebrow">Contacto</p><h2>Cuéntanos qué quieres mejorar en tu negocio</h2><p class="muted" style="max-width:760px;margin:0 auto">Explícanos el proceso que hoy consume tiempo, genera errores o está repartido entre varias herramientas. Valoraremos contigo una solución realista.</p><div class="cta"><a class="btn" href="mailto:ritmoops@gmail.com?subject=Consulta%20Ritmo%20OPS">Escribir a Ritmo OPS</a><a class="btn ghost" href="https://app.ritmo-ops.com" target="_blank" rel="noopener">Acceder a la plataforma</a></div><p style="margin-top:20px"><strong>Correo de contacto:</strong> <a href="mailto:ritmoops@gmail.com">ritmoops@gmail.com</a></p><p class="muted" style="font-size:14px;margin-top:8px">Valencia, España · ritmoops@gmail.com</p></div></div></section>
+</main>
+<footer><div class="wrap cols"><div class="legal"><p><strong>Ritmo OPS</strong> — Ritmo OPS — automatización de procesos, sistemas de gestión e integración de herramientas para empresas.</p><p>© 2026 Ritmo OPS · Valencia, España</p></div><div><p><a href="/restaurantes.html">Restaurantes</a><br><a href="/comercio.html">Comercio</a><br><a href="/privacidad.html">Privacidad</a><br></p></div><div><p><a href="mailto:ritmoops@gmail.com">ritmoops@gmail.com</a><br><a href="https://app.ritmo-ops.com">Entrar en la aplicación</a></p></div></div></footer>
 <script>
-document.addEventListener("click", function (e) {
-  var el = e.target.closest("[data-copy]");
-  if (!el) return;
-  e.preventDefault();
-  if (el.dataset.busy) return;
-  var was = el.textContent, done = el.getAttribute("data-done") || "OK";
-  var show = function () {
-    el.dataset.busy = "1"; el.textContent = done;
-    setTimeout(function () { el.textContent = was; delete el.dataset.busy; }, 1600);
-  };
-  var txt = el.getAttribute("data-copy");
-  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(show, show);
-  else {
-    var i = document.createElement("textarea");
-    i.value = txt; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
-    document.body.appendChild(i); i.select();
-    try { document.execCommand("copy"); } catch (err) {}
-    i.remove(); show();
-  }
-});
+(function(){
+ const root=document.querySelector('.dashboard-demo'); if(!root)return;
+ const tabs=[...root.querySelectorAll('[data-dashboard-tab]')];
+ const panels=[...root.querySelectorAll('[data-dashboard-panel]')];
+ const tables=[...root.querySelectorAll('[data-dashboard-table]')];
+ tabs.forEach(btn=>btn.addEventListener('click',()=>{
+   const n=btn.getAttribute('data-dashboard-tab');
+   tabs.forEach(t=>t.setAttribute('aria-selected',String(t===btn)));
+   panels.forEach(p=>p.hidden=p.getAttribute('data-dashboard-panel')!==n);
+   tables.forEach(t=>t.hidden=t.getAttribute('data-dashboard-table')!==n);
+ }));
+})();
 </script>
-</body>
-</html>
+</body></html>
